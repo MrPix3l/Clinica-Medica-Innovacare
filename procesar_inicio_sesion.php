@@ -16,9 +16,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if ($usuario) {
         echo $_POST['password'];
-        $hashed_passwd = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $password = $_POST['password'];
+        $hashed_passwd = password_hash($password, PASSWORD_DEFAULT);
         
         echo "entered:" . "$hashed_passwd <br>";
+        echo "password_p:".$password;
         echo "db:" . $usuario['password'] . "<br>";
         
         if (password_verify($hashed_passwd, $usuario['password'])) {
