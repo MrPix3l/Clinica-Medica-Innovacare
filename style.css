@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(57, 166, 255);
+}
+.welcome-section h2 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-size: 2.1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a.login-button {
+    background-color: white;
+    color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para la sección de horarios */
+#horarios {
+    margin: 100px auto;
+    max-width: 800px;
+    padding: 40px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    
+}
+
+#horarios h2 {
+    text-align: center;
+    color: hwb(0 0% 100%);
+}
+
+#horarios table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#horarios th, #horarios td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#horarios th {
+    background-color: #007BFF;
+    color: white;
+}
+
+#horarios tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#horarios tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilo mejorado para la sección de contacto */
+#contacto {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contacto h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.direccion-container {
+    margin-bottom: 20px;
+    padding: 15px; 
+}
+
+.direccion-container p {
+    font-size: 1.6rem;
+    color: #007BFF;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.direccion-container p:last-child {
+    margin-bottom: 0;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+    text-align: center ;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}

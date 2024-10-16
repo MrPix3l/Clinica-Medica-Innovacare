@@ -1,0 +1,114 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 20px 0;
+}
+
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a.login-button {
+    background-color: white;
+    color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#bienvenida h1 {
+    color: #007BFF;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#bienvenida p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.dashboard-section {
+    margin-bottom: 50px;
+}
+
+.dashboard-section h2 {
+    color: #007BFF;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.historial-content, .medico-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.historial-content p, .medico-item p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.historial-content p strong, .medico-item p strong {
+    color: #007BFF;
+}
+
+#citas a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#citas a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}

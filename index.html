@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica medica Innovacare</title>
+    
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">Clinica Innovacare</div>
+        <nav>
+            <ul>
+                <li><a style="cursor:pointer" id="horarioBtn" onclick="scrollToSection('horarios')">HORARIOS DE ATENCIÓN</a></li>
+                <li><a style="cursor:pointer" id="contactoBtn" onclick="scrollToSection('contacto')">CONTACTO</a></li>
+                <li><a href="inicio_sesion.html" class="login-button">INGRESAR</a></li>
+            </ul>
+        </nav>
+    </div>
+</header><br>
+
+<!-- Sección de Bienvenida -->
+<section class="welcome-section">
+    <br>
+    <h1>¡Bienvenidos a Clínica Innovacare!</h1><br>
+    
+    <div style="display: flex; flex-direction: row; justify-content: center; gap: 5%; margin-left: 5%; margin-right: 5%;">
+        <h2>En nuestra clínica, nos dedicamos a proporcionar atención médica de calidad, enfocándonos en cuidar tu salud de manera integral. Nuestro equipo de profesionales altamente capacitados se esfuerza por ofrecer un servicio personalizado, asegurando que cada paciente reciba el cuidado que necesita para mejorar su bienestar general.</h2>
+        <!-- <img style="max-height: ;" src="Imagenes/Divisor de texto 2.png" alt=""> -->
+        <div style="width: 2vw; height: 100; background-color: #aaa;"></div>
+
+
+        <h2>Estamos comprometidos con la innovación en tratamientos y servicios médicos, incorporando las últimas tecnologías y enfoques en nuestra atención. Nuestro objetivo es siempre brindarte lo mejor, garantizando que tanto tú como tu familia tengan acceso a soluciones efectivas y seguras para su salud.</h2>
+    </div>
+    
+</section>
+
+<img src="Imagenes/CLI.webp" alt="Imagen de la Clínica" style="width: 50%; margin-top: 20px; justify-content: center; margin-left: auto; margin-right: auto; display: block;">
+</section>
+
+
+
+<!-- Sección de Horarios de Atención -->
+<section id="horarios" class="direccion-container">
+    <h2>Horarios de Atención</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Horario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lunes a Viernes</td>
+                <td>8:00 AM - 6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>9:00 AM - 1:00 PM</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>Cerrado</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Sección de Contacto -->
+<h1 id="contacto" class="direccion-container"></h1>
+
+<div class="direccion-container">
+    <p><strong>Dirección:</strong></p>
+    <p>Los Santos, avenida Grove Street, calle Ganton</p>
+</div><br>
+
+<div class="direccion-container">
+    <p><strong>Correo electrónico:</strong></p>
+    <p>Innovacare@gmail.com</p>
+</div><br>
+
+<div class="direccion-container">
+    <p><strong>Número telefónico:</strong></p>
+    <p>(123) 456-7890</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Clínica Innovacare. Todos los derechos reservados.</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

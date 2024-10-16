@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+    <link rel="stylesheet" href="inicio_sesion.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">Innovacare</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="register-container">
+            <form id="registerForm" action="procesar_registro.php" method="POST">
+                <center><h1>Registrarse</h1></center>
+                
+                <label for="rut">RUT</label>
+                <!-- Se agrega el placeholder con un ejemplo típico de RUT -->
+                <input type="text" id="rut" name="rut" placeholder="Ej: 12.345.678-9" required>
+                
+                <label for="password">CONTRASEÑA</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" id="viewPassword" onclick="viewPassword()"></button>
+                </div>
+
+                <label for="confirm_password">CONFIRMAR CONTRASEÑA</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                    <button type="button" id="viewConfirmPassword" onclick="viewConfirmPassword()"></button>
+                </div>
+                
+                <a href="inicio_sesion.html" class="forgot-password">Ya tienes una cuenta? Iniciar Sesión</a><br>
+                
+                
+                <button type="submit" class="register-button">REGISTRARSE</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="registro.js">
+        // Mostrar y ocultar contraseñas
+        function viewPassword() {
+            const passwordField = document.getElementById('password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+
+        function viewConfirmPassword() {
+            const confirmPasswordField = document.getElementById('confirm_password');
+            if (confirmPasswordField.type === 'password') {
+                confirmPasswordField.type = 'text';
+            } else {
+                confirmPasswordField.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>
