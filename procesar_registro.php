@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Insertar un nuevo usuario en la base de datos
         $insertUser = 'INSERT INTO usuarios (rut, password) VALUES (?, ?)';
         $stmt = $db->prepare($insertUser);
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT); // Encriptar la contraseña
+        $hashed_password = password_hash($password, PASSWORD_BCRYPT); // Encriptar la contraseña
         $stmt->execute([$rut, $hashed_password]);
 
         if ($stmt) {
